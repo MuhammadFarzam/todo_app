@@ -1,18 +1,11 @@
 import React, { useState } from "react";
-import {
-  Button,
-  FormControl,
-  Input,
-  InputLabel,
-  List,
-} from "@material-ui/core";
+import { Button, FormControl, Input, InputLabel } from "@material-ui/core";
 import Todo from "./Todo";
 import "./App.css";
 
 function App() {
   const [todos, setTodos] = useState(["apple", "grapes"]);
   const [input, setInput] = useState("");
-  use;
 
   const addTodos = (e) => {
     e.preventDefault();
@@ -24,7 +17,7 @@ function App() {
       <h1> React TODO App </h1>
       <form>
         <FormControl>
-          <InputLabel> ✔Write a Todo </InputLabel>
+          <InputLabel>✔ Write a Todo </InputLabel>
           <Input
             value={input}
             onChange={(e) => {
